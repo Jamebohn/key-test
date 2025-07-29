@@ -178,7 +178,7 @@ body.nav-closing .nav-links li{
 /* Hero Section */
 .hero-section {
     background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('1021.png') no-repeat center center/cover;
-    background-attachment: fixed;
+    /* background-attachment: fixed; */
     background-size: cover;
     background-repeat: no-repeat;
     color: #fff;
@@ -313,7 +313,6 @@ body.nav-closing .nav-links li{
     text-align: center; /* Centrer le texte pour le titre et l'intro */
     background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('100.png') no-repeat;
     background-size: cover;
-    /* background-attachment: fixed; */
     padding-top: 50px;
     padding-bottom: 50px;
 }
@@ -519,6 +518,7 @@ body.nav-closing .nav-links li{
     max-width: 50%;
     border-radius: 10px;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    filter: drop-shadow(0 0 10px rgba(255, 217, 0, 0.483));
 }
 
 .suivi-text {
@@ -782,7 +782,7 @@ body.nav-closing .nav-links li{
     .section-title {
         font-size: 2.5rem;
     }
-    .suivi-content img {
+    .suivi-content img, .heros-content img{
         max-width: 100%;
     }
     
@@ -834,18 +834,18 @@ body.nav-closing .nav-links li{
         grid-template-columns: 1fr;
     }
 
-    .suivi-content {
+    .suivi-content, .heros-content {
         flex-direction: column;
     }
 
-    .suivi-content img, .suivi-text {
+    .suivi-content img, .suivi-text, .heros-content img, .heros-text {
         max-width: 100%;
     }
     
     .avantages-content img {
         max-width: 100%;
     }
-    .suivi-content img {
+    .suivi-content img, .heros-content img {
         margin-bottom: 30px;
     }
     .contact-form {
@@ -907,21 +907,98 @@ body.nav-closing .nav-links li{
 
 
 /* Page About */
-.about-section {
-    background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url('101.png') no-repeat center center/cover;
+
+.about-section{
+    /* background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url('histoire-mission.png') no-repeat center center/cover; */
 }
 
-.about-content {
-    max-width: 900px;
+.team-section{
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('histoire-mission.png') no-repeat center center/cover;
+    color: #ffffff; 
+    text-align: center;
+}
+
+.team-section p{
+    font-size: 1em; /* Taille de police du paragraphe */
+    line-height: 1.6; /* Hauteur de ligne pour une meilleure lisibilité */
+    max-width: 800px; /* Largeur maximale pour le paragraphe */
+    margin: 0 auto 40px auto; /* Centrage et espacement sous le paragraphe */
+    color: #ffffff;
+}
+
+/* Heros Section */
+.heros-section {
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('1021.png') no-repeat center center/cover;
+    padding: 80px 20px;
+    align-items: center;
+}
+
+.heros-content{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 50px;
+    align-items: center;
+    max-width: 1200px;
     margin: 0 auto;
-    padding: 0 20px;
+    text-align: center;
 }
 
-.about-content p {
-    font-size: 1.15rem;
+.heros-content img{
+    flex: 1;
+    min-width: 300px;
+    max-width: 50%;
+    align-items: center;
+}
+
+.heros-logo{
+    max-width: 70%;
+    height: auto;
+    margin-bottom: 30px;
+    filter: drop-shadow(0 0 10px rgba(255, 217, 0, 0.483));
+    align-items: center;
+}
+
+.heros-tagline{
+    font-size: 1.4rem;
+    font-weight: bold;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    opacity: 0.9;
+    padding-bottom: 20px;
+}
+
+.heros-text{
+    flex: 1;
+    padding: 60px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    box-shadow: inset 0 0 60px rgba(255, 215, 0, 0.2);
+    border-radius: 10px;
+    box-sizing: border-box;
+    min-width: 300px;
+    align-items: center;
+    text-align: center;
+}
+
+.heros-text p {
+    font-size: 1.1rem;
     margin-bottom: 20px;
-    line-height: 1.8;
-    text-align: left;
-    color: var(--light-text);
+    opacity: 0.9;
+    line-height: 1.7;
 }
 
+.heros-btn {
+    display: inline-block;
+    padding: 15px 30px;
+    background-color: transparent;
+    color: #FFD700; 
+    border: 2px solid #FFD700; 
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 1.1rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;
+    margin-top: 30px;
+}
