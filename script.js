@@ -4,8 +4,9 @@ document.addEventListener('DOMContentLoaded', () => {
     const nav = document.querySelector('.nav-links');
     const navLinks = document.querySelectorAll('.nav-links li');
     const body = document.body; // Référence au body
-    const animatedElementsOnScroll = document.querySelectorAll('.section, .services-section .section-title, .services-section .services');
-    const scrollAnimatedElements = document.querySelectorAll('.service-item, .temoignage-card, .stat-item, .avantage-item');
+    const animatedElementsOnScroll = document.querySelectorAll('.section');
+    const scrollAnimatedElements = document.querySelectorAll('.service-item, .temoignage-card, .stat-item, .avantage-item, .valeur-cardl');
+    const titleAnimatedElements = document.querySelectorAll('.section-title, .valeur-cardr');
 
     // Fonction pour gérer la fermeture du menu avec animation inverse
     const closeNav = () => {
@@ -88,7 +89,13 @@ document.addEventListener('DOMContentLoaded', () => {
         threshold: 0.05
     };
 
-    const scrollObserverOptions = { 
+    const scrollOptions = { 
+        root: null,
+        rootMargin: '0px',
+        threshold: 0.4
+    };
+
+    const titleOptions = { 
         root: null,
         rootMargin: '0px',
         threshold: 0.4
@@ -106,27 +113,43 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }, observerOptions);
     
-    const scrollIntersectionObserver = new IntersectionObserver((entries, observer) => {
+    const scrollObserver = new IntersectionObserver((entries, observer) => {
         entries.forEach(entry => {
             if (entry.isIntersecting) {
                 // L'élément entre ou est dans le viewport
-                entry.target.classList.add('scroll-anim-visible');
+                entry.target.classList.add('scroll-visible');
             } else {
                 // L'élément sort du viewport (par le haut ou par le bas)
-                entry.target.classList.remove('scroll-anim-visible');
+                entry.target.classList.remove('scroll-visible');
             }
         });
-    }, scrollObserverOptions);
+    }, scrollOptions);
+
+    const titleObserver = new IntersectionObserver((entries, observer) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                // L'élément entre ou est dans le viewport
+                entry.target.classList.add('title-visible');
+            } else {
+                // L'élément sort du viewport (par le haut ou par le bas)
+                entry.target.classList.remove('title-visible');
+            }
+        });
+    }, titleOptions);
 
     animatedElementsOnScroll.forEach(element => {
         element.classList.add('hidden'); // S'assurer que tous les éléments sont cachés au chargement initial
         observer.observe(element);
     });
 
-    document.body.classList.add('loaded');
     scrollAnimatedElements.forEach(element1 => {
-        element1.classList.add('scroll-anim-hidden'); 
-        scrollIntersectionObserver.observe(element1); 
+        element1.classList.add('scroll-hidden'); 
+        scrollObserver.observe(element1); 
     });
-
+    
+    titleAnimatedElements.forEach(element2 => {
+        element2.classList.add('title-hidden'); 
+        titleObserver.observe(element2); 
+    });
+    
 });
