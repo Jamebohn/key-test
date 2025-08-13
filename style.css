@@ -15,7 +15,6 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    overflow-x: hidden;
 }
 
 body {
@@ -1048,7 +1047,6 @@ body.nav-closing .nav-links li{
         font-size: 1.5rem;
     }
 }
-<<<<<<< HEAD
 
 
 
@@ -1275,5 +1273,3 @@ strong {
         justify-content: center;
     }
 }
-=======
->>>>>>> 6d83ea9b09c090270092f1f1d83bd81e4f3a4a1b
