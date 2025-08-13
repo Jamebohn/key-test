@@ -5,8 +5,8 @@ document.addEventListener('DOMContentLoaded', () => {
     const navLinks = document.querySelectorAll('.nav-links li');
     const body = document.body; // Référence au body
     const animatedElementsOnScroll = document.querySelectorAll('.section');
-    const scrollAnimatedElements = document.querySelectorAll('.service-iteml, .temoignage-card, .stat-item, .avantage-item, .valeur-cardl');
-    const titleAnimatedElements = document.querySelectorAll('.section-title, .valeur-cardr, .service-itemr');
+    const scrollAnimatedElements = document.querySelectorAll('.service-iteml, .temoignage-card, .stat-item, .avantage-iteml, .valeur-cardl');
+    const titleAnimatedElements = document.querySelectorAll('.section-title, .valeur-cardr, .service-itemr, .avantage-itemr');
 
     // Fonction pour gérer la fermeture du menu avec animation inverse
     const closeNav = () => {
