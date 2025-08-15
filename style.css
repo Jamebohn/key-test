@@ -169,7 +169,7 @@ body.nav-closing .nav-links li{
 
 /* Hero Section */
 .hero-section {
-    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('1021.png') no-repeat center center/cover;
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('1021.jpg') no-repeat center center/cover;
     background-attachment: fixed;
     background-size: cover;
     background-repeat: no-repeat;
@@ -230,7 +230,7 @@ body.nav-closing .nav-links li{
 
 /* Avantages Section */
 .avantages-section {
-    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('avantage.png') no-repeat center center/cover;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('avantage.jpg') no-repeat center center/cover;
 }
 
 .avantages-content {
@@ -305,7 +305,7 @@ body.nav-closing .nav-links li{
     color: #fff; /* Couleur du texte par défaut */
     padding: 60px 20px; /* Espacement interne */
     text-align: center; /* Centrer le texte pour le titre et l'intro */
-    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('100.png') no-repeat;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('100.jpg') no-repeat;
     background-size: cover;
     padding-top: 50px;
     padding-bottom: 50px;
@@ -451,7 +451,7 @@ body.nav-closing .nav-links li{
 
 /* Stratégie Section */
 .strategie-section {
-    background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url('101.png') no-repeat center center/cover;
+    background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url('101.jpg') no-repeat center center/cover;
 }
 
 .strategie-content {
@@ -541,7 +541,7 @@ body.nav-closing .nav-links li{
 
 /* Témoignages Section */
 .temoignages-section {
-    background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.2)), url('102.png') no-repeat center center/cover; 
+    background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.2)), url('102.jpg') no-repeat center center/cover; 
     text-align: center;
     justify-content: center;
     padding: 80px 20px;
@@ -600,7 +600,7 @@ body.nav-closing .nav-links li{
 /* =================================================== */
 
 .resources-section {
-    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('laptop100.png') no-repeat center center/cover;
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('laptop100.jpg') no-repeat center center/cover;
     color: #ffffff; 
     text-align: center;
 }
@@ -839,7 +839,7 @@ body.nav-closing .nav-links li{
 
 /* Heros Section */
 .heros-section {
-    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('1021.png') no-repeat center center/cover;
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('1021.jpg') no-repeat center center/cover;
     background-attachment: fixed;
     background-size: cover;
     background-repeat: no-repeat;
@@ -920,7 +920,7 @@ body.nav-closing .nav-links li{
 }
 
 .valeurs-section {
-    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('histoire-mission.png') no-repeat center center/cover;
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('histoire-mission.jpg') no-repeat center center/cover;
 }
 
 .valeurs-grid{
@@ -956,7 +956,7 @@ body.nav-closing .nav-links li{
 }
 
 .team-section{
-    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('102.png') no-repeat center center/cover; 
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('102.jpg') no-repeat center center/cover; 
     text-align: center;
     justify-content: center;
     padding: 80px 20px;
@@ -1053,7 +1053,7 @@ body.nav-closing .nav-links li{
 /* --- STYLES POUR LA PAGE MENTIONS LÉGALES --- */
 
 .page-mentions {
-    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('1021.png') no-repeat center center/cover;
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('1021.jpg') no-repeat center center/cover;
     color: var(--light-text);
     padding: 80px 20px;
     font-family: 'Roboto', sans-serif;
